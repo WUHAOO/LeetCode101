@@ -39,7 +39,7 @@ class Solution(object):
             p = node
         return dummy.next
 
-
+        # 还有一种办法就是计算好进位，没什么特别的难度。
 
 
 
