@@ -30,13 +30,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="378" />
+          <entry key="md" value="380" />
           <entry key="py" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="378" />
+          <entry key="Markdown" value="380" />
           <entry key="Python" value="85" />
         </counts>
       </usages-collector>
