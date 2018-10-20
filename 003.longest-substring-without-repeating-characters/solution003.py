@@ -59,5 +59,25 @@ class Solution(object):
 '''
 ## - 方法三 维护两个hashTable -
 class Solution(object):
-    
+    def lengthOfLongestSubstring(self, s):
+        FirstPosition = dict()  # 某个字母开始位置
+        startPosition = 1  # 目前查找的段落开始位置
+        maxLen = 0
+        print (s)
+        for i in range(len(s)):
+            x = s[i]
+            i = i + 1
+            if x in FirstPosition:
+                fp = FirstPosition[x]
+                if startPosition <= fp:
+                    startPosition = fp + 1
+                    FirstPosition[x] = i
+            FirstPosition[x] = i
+            maxLen = max(maxLen, i - startPosition+1)
+            print ('i:',i,' x:',x)
+            print ('Len:', i - startPosition+1)
+            print ('FirstPosition:',FirstPosition)
+            print ('startPosition:',startPosition)
+            print ('max:',maxLen)
+        return maxLen
 
